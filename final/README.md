@@ -1,7 +1,8 @@
-Title: Ocean Climate & Marine Life
-Student: Pavan Kumar
-Course: AIT-620
+### Title: Ocean Climate & Marine Life
+### Student: Pavan Kumar
+### Course: AIT-620
 
+# About Data and Problem
 As climate change accelerates, the world's oceans are experiencing significant transformations. This dataset compiles synthetic-yet-realistic measurements of sea surface temperature (SST), pH levels, coral bleaching severity, and species observations from ecologically critical marine zones. It spans from 2015 to 2023 and simulates how marine environments are responding to global warming, acidification, and heatwaves.
 
 Data Types:
