@@ -5,18 +5,20 @@
 # About Data and Problem
 As climate change accelerates, the world's oceans are experiencing significant transformations. This dataset compiles synthetic-yet-realistic measurements of sea surface temperature (SST), pH levels, coral bleaching severity, and species observations from ecologically critical marine zones. It spans from 2015 to 2023 and simulates how marine environments are responding to global warming, acidification, and heatwaves.
 
-Data Types:
+**Data Types:**
 
-Column-Name 	            Description
-Date	                    Date of observation
-Location	                Marine location name (e.g., Great Barrier Reef, Maldives)
-Latitude	                Latitude of the observation site
-Longitude	                Longitude of the observation site
-SST (°C)	                Sea Surface Temperature in degrees Celsius
-pH Level	                Acidity level of seawater (lower means more acidic, a sign of acidification)
-Bleaching Severity	        Categorical variable: None, Low, Medium, High
-Species Observed	        Count of marine species observed during the sampling period
-Marine Heatwave         	Boolean flag (True/False) indicating whether SST > 30°C
+| Column Name           | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| Date                 | Date of observation                                                         |
+| Location             | Marine location name (e.g., Great Barrier Reef, Maldives)                    |
+| Latitude             | Latitude of the observation site                                             |
+| Longitude            | Longitude of the observation site                                            |
+| SST (°C)             | Sea Surface Temperature in degrees Celsius                                   |
+| pH Level             | Acidity level of seawater (lower means more acidic, a sign of acidification) |
+| Bleaching Severity   | Categorical variable: None, Low, Medium, High                                |
+| Species Observed     | Count of marine species observed during the sampling period                  |
+| Marine Heatwave      | Boolean flag (True/False) indicating whether SST > 30°C                      |
+
 
 ### Location of DATA: https://www.kaggle.com/datasets/atharvasoundankar/shifting-seas-ocean-climate-and-marine-life-dataset/data
  *This dataset has only 500 rows, I downloaded on the loal system for easy use and I have uploaded to GitHub also, as it's on local path.*
