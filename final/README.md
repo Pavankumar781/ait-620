@@ -2,6 +2,17 @@
 # About Dataset
 As climate change accelerates, the world's oceans are experiencing significant transformations. This dataset compiles synthetic-yet-realistic measurements of sea surface temperature (SST), pH levels, coral bleaching severity, and species observations from ecologically critical marine zones. It spans from 2015 to 2023 and simulates how marine environments are responding to global warming, acidification, and heatwaves.
 
+Column-Name 	            Description
+Date	                    Date of observation
+Location	                Marine location name (e.g., Great Barrier Reef, Maldives)
+Latitude	                Latitude of the observation site
+Longitude	                Longitude of the observation site
+SST (°C)	                Sea Surface Temperature in degrees Celsius
+pH Level	                Acidity level of seawater (lower means more acidic, a sign of acidification)
+Bleaching Severity	        Categorical variable: None, Low, Medium, High
+Species Observed	        Count of marine species observed during the sampling period
+Marine Heatwave         	Boolean flag (True/False) indicating whether SST > 30°C
+
 ### Location of DATA: https://www.kaggle.com/datasets/atharvasoundankar/shifting-seas-ocean-climate-and-marine-life-dataset/data
  *This dataset has only 500 rows, I downloaded on the loal system for easy use and I have uploaded to GitHub also, as it's on local path.*
 
@@ -63,8 +74,16 @@ Key Actions:
 Key Actions:
 - Actual vs. Predicted Analysis: Generated a regression plot to visualize the residuals. The tight grouping of data points around the $y=x$ identity line confirms a strong correlation ($R^2=0.69$) and low variance in errors.
 - Climate Sensitivity Simulation: Conducted a "What-If" test by simulating a significant drop in ocean pH (Acidification).
-- Findings: The model predicted a correlated rise in Sea Surface Temperature of approximately 1.18°C.Conclusion: This demonstrates that the model has successfully learned the complex relationship between ocean chemistry and climate warming, allowing it to be used as a tool for environmental impact forecasting.
+- Findings: The model predicted a correlated rise in Sea Surface Temperature of approximately 1.18°C.
+- Conclusion: This demonstrates that the model has successfully learned the complex relationship between ocean chemistry and climate warming, allowing it to be used as a tool for environmental impact forecasting.
 
-### Conclusion:
-The transition from a categorical classification approach to a continuous regression model using Random Forest resulted in a significant performance leap. By standardizing features and encoding geographical data, we moved from near-random guessing ($23\%$) to a sophisticated predictive tool with a Mean Absolute Error of only $0.68^{\circ}C$. The model is now capable of accurately simulating climate change scenarios, such as ocean acidification, with a high degree of mathematical confidence ($R^2 = 0.69$).
+### Phase 7: Hyperparameter Optimization
+*Objective: Fine-tune the model architecture to minimize prediction error.* 
+
+Key Actions:
+- Grid Search Cross-Validation (GridSearchCV): Automatically tested various configurations of the Random Forest (Tree count, Depth, and Leaf size).
+- Logic: Optimization ensures the model is neither too simple (underfitting) nor too complex (overfitting). By testing each setting against 5 different subsets of data (5-fold CV), we ensure the results are statistically stable.
+- Outcome: Identified optimal parameters (n_estimators: 200).
+- Performance Gain: Reduced Mean Absolute Error to $0.65^{\circ}C$ and increased the $R^2$ score to $0.72$.
+
 
