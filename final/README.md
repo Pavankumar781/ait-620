@@ -1,3 +1,4 @@
+## GitHub URL: https://github.com/Pavankumar781/ait-620/blob/main/final/final_pavan_kumar_ait620-02.ipynb
 # About Dataset
 As climate change accelerates, the world's oceans are experiencing significant transformations. This dataset compiles synthetic-yet-realistic measurements of sea surface temperature (SST), pH levels, coral bleaching severity, and species observations from ecologically critical marine zones. It spans from 2015 to 2023 and simulates how marine environments are responding to global warming, acidification, and heatwaves.
 
